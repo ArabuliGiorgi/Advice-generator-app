@@ -6,3 +6,86 @@
 h1{
     font-family: "Manrope", sans-serif;
 }
+body{
+    background-color: #202733;
+    margin: 120px 16px 0 16px;
+}
+main{
+    width: 100%;
+    max-width: 540px;
+    margin: 0 auto;
+    background-color: #313A48;
+    box-shadow: 30px 50px 80px 0px #0000001A;
+    padding: 40px 24px 64px 24px;
+    border-radius: 10px;
+    position: relative;
+}
+.header-text{
+    font-size: 11px;
+    font-weight: 800;
+    line-height: 15.03px;
+    letter-spacing: 3.46px;
+    text-align: center;
+    color: #53FFAA;
+    margin-bottom: 24px;
+}
+#advice{
+    font-size: 24px;
+    font-weight: 800;
+    line-height: 32.78px;
+    letter-spacing: -0.26px;
+    text-align: center;
+    color: #CEE3E9;
+}
+.divider{
+    margin: 24px auto 0 auto;
+    width: 100%;
+    min-height: 16px;
+    background: url(images/pattern-divider-mobile.svg) center no-repeat;
+}
+.button{
+    width: 64px;
+    height: 64px;
+    background-color: #53FFAA;
+    border-radius: 100px;
+    position: absolute;
+    bottom: -32px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.button:hover{
+    box-shadow: 0px 0px 40px 0px #53FFAA;
+    cursor: pointer;
+    transition: all ease 0.2s;
+}
+
+@media only screen and (min-width: 600px){
+    body{
+        margin: 0;
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    main{
+        margin: 0;
+        padding: 48px 48px 72px 48px;
+    }
+    .header-text{
+        font-size: 13px;
+        line-height: 17.76px;
+        letter-spacing: 4.09px;
+    }
+    #advice{
+        font-size: 28px;
+        line-height: 38.25px;
+        letter-spacing: -0.3px;
+    }
+    .divider{
+        margin-top: 40px;
+        background: url(images/pattern-divider-desktop.svg) center no-repeat;
+    }
+}
