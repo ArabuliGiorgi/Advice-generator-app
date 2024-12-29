@@ -8,8 +8,10 @@
 h1{
   font-family: "Manrope", serif;
 }
+body{
+  background-color: #202733;
+}
 #root{
   width: 100%;
   min-height: 100vh;
-  background-color: #202733;
 }
